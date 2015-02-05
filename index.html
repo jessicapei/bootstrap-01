@@ -18,35 +18,84 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron col-md-12">
+        <h1>My Products</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, magna sit amet elementum feugiat, arcu sapien pulvinar ligula, a iaculis velit nibh eu sapien. In pretium sit amet dui eu blandit. Sed efficitur consectetur enim. Praesent ullamcorper massa neque, finibus accumsan justo elementum viverra. Proin at neque et arcu porttitor scelerisque. Pellentesque rutrum nibh ut nibh varius pharetra. Morbi nec urna urna. Vestibulum sed leo egestas, congue eros nec, fermentum sem. Ut suscipit luctus leo ac pharetra. Vivamus nec nulla velit. Vivamus blandit vitae nisi vitae pellentesque. Mauris dignissim lobortis libero nec tincidunt. Nullam non tempor sapien.</p>
 
-    <!-- Indicates a successful or positive action -->
-    <button type="button" class="btn btn-success">Success</button>
+           <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>
 
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                Hey, it works!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- Start Product A -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="http://placehold.it/350x350" alt="...">
+            <div class="caption">
+              <h3>Product A</h3>
+              <p>Donec volutpat elementum convallis. Fusce in accumsan libero. Sed sodales pharetra nisl, non sodales ligula consequat nec. Duis id augue vel urna euismod cursus ac id est. Fusce scelerisque arcu nunc, sit amet accumsan lectus ultrices sit amet. Quisque sed velit vitae risus lacinia pellentesque nec id erat. Curabitur egestas quis metus vitae lobortis.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- End Product A -->
+
+        <!-- Start Product B -->
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="http://placehold.it/350x350" alt="...">
+            <div class="caption">
+              <h3>Product B</h3>
+              <p>Donec ullamcorper elit nulla, non eleifend tortor mattis vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a tincidunt libero. Proin ligula metus, vestibulum ut ex ac, feugiat fringilla orci. Fusce laoreet augue at justo facilisis, a ullamcorper sapien laoreet. Aenean commodo eros non diam fermentum congue. Donec vel ex lacus.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- End Product B -->
+
+        <!-- Start Product C -->
+         <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="http://placehold.it/350x350" alt="...">
+            <div class="caption">
+              <h3>Product C</h3>
+              <p>Sed lacinia condimentum mauris eu laoreet. Vestibulum cursus suscipit massa, vitae tempor urna facilisis nec. Nunc hendrerit a quam bibendum vulputate. Vivamus fermentum justo a vestibulum vehicula. Maecenas eu eros ac purus lobortis pharetra finibus nec sem. Sed maximus dolor eget nisi ullamcorper euismod.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- End Product C -->
       </div>
     </div>
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
