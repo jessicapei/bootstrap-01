@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>My Restaurant</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,35 +22,90 @@
   <body>
     <div class="container">
       <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" aria-label="Shopping Cart" data-toggle="modal" data-target="#myModal">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+                  </span>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Review Your Order</h4>
+                      </div>
+                      <div class="modal-body">
+                        <h3>Cart Contents:</h3>
+                        ...
+                        <h3>Deliver to This Location?</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12465.182808063404!2d-90.30898685!3d38.6420806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1424819151229" width="400" height="300" frameborder="0" style="border:0"></iframe>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Yes
+                          </label>
+                        </div>
+                      
+                        <p>If not, please enter your address:</p>
+                        <input type="text" class="form-control" placeholder="Address">
+
+                        <h3>Subtotal:</h3>
+                        ...
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
+                        <button type="button" class="btn btn-primary">Check Out</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+      <div class="row">
         <div class="jumbotron col-md-12">
-        <h1>My Products</h1>
+        <h1>My Restaurant</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, magna sit amet elementum feugiat, arcu sapien pulvinar ligula, a iaculis velit nibh eu sapien. In pretium sit amet dui eu blandit. Sed efficitur consectetur enim. Praesent ullamcorper massa neque, finibus accumsan justo elementum viverra. Proin at neque et arcu porttitor scelerisque. Pellentesque rutrum nibh ut nibh varius pharetra. Morbi nec urna urna. Vestibulum sed leo egestas, congue eros nec, fermentum sem. Ut suscipit luctus leo ac pharetra. Vivamus nec nulla velit. Vivamus blandit vitae nisi vitae pellentesque. Mauris dignissim lobortis libero nec tincidunt. Nullam non tempor sapien.</p>
 
-           <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          Launch demo modal
-        </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-              </div>
-              <div class="modal-body">
-                Hey, it works!
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
         </div>
+      </div>
+
+      <div class = "row">
+        <h2>Most Popular Dishes</h2>
       </div>
 
       <div class="row">
@@ -60,9 +115,9 @@
           <div class="thumbnail">
             <img src="http://placehold.it/350x350" alt="...">
             <div class="caption">
-              <h3>Product A</h3>
+              <h3>Pasta</h3>
               <p>Donec volutpat elementum convallis. Fusce in accumsan libero. Sed sodales pharetra nisl, non sodales ligula consequat nec. Duis id augue vel urna euismod cursus ac id est. Fusce scelerisque arcu nunc, sit amet accumsan lectus ultrices sit amet. Quisque sed velit vitae risus lacinia pellentesque nec id erat. Curabitur egestas quis metus vitae lobortis.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
             </div>
           </div>
         </div>
@@ -73,9 +128,9 @@
           <div class="thumbnail">
             <img src="http://placehold.it/350x350" alt="...">
             <div class="caption">
-              <h3>Product B</h3>
+              <h3>Salad</h3>
               <p>Donec ullamcorper elit nulla, non eleifend tortor mattis vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a tincidunt libero. Proin ligula metus, vestibulum ut ex ac, feugiat fringilla orci. Fusce laoreet augue at justo facilisis, a ullamcorper sapien laoreet. Aenean commodo eros non diam fermentum congue. Donec vel ex lacus.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
             </div>
           </div>
         </div>
@@ -86,9 +141,9 @@
           <div class="thumbnail">
             <img src="http://placehold.it/350x350" alt="...">
             <div class="caption">
-              <h3>Product C</h3>
+              <h3>Soup</h3>
               <p>Sed lacinia condimentum mauris eu laoreet. Vestibulum cursus suscipit massa, vitae tempor urna facilisis nec. Nunc hendrerit a quam bibendum vulputate. Vivamus fermentum justo a vestibulum vehicula. Maecenas eu eros ac purus lobortis pharetra finibus nec sem. Sed maximus dolor eget nisi ullamcorper euismod.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
             </div>
           </div>
         </div>
